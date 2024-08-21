@@ -1,0 +1,17 @@
+<div class="menu padding-x">
+  <ul class="menu__list">
+    <li
+      *ngFor="let category of categories; let i = index"
+      class="menu__item"
+      [ngClass]="{ 'menu__item--active': selectedIndex === i }"
+      (click)="selectCategory(i)"
+    >
+      <p class="menu__item-text">{{ category.name }}</p>
+      <img
+        class="menu__item-image"
+        src="{{ category.img }}"
+        alt="{{ category.name }}"
+      />
+    </li>
+  </ul>
+</div>

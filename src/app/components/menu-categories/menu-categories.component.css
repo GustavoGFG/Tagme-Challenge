@@ -1,0 +1,51 @@
+.menu {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: transform 0.3s ease;
+  position: sticky;
+}
+.menu::-webkit-scrollbar {
+  display: none;
+}
+.menu__list {
+  display: flex;
+  gap: 10px;
+}
+.menu__item {
+  cursor: pointer;
+  padding: 15px;
+  height: 65px;
+  width: min-content;
+  min-width: 135px;
+  border-radius: 8px;
+  position: relative;
+  color: var(--white-color);
+  background: var(--modal-bg);
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.menu__item--active {
+  cursor: default;
+  background: var(--gray-color);
+}
+
+.menu__item-text {
+  user-select: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.menu__item-image {
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+}

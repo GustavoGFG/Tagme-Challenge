@@ -1,0 +1,19 @@
+.shared-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.shared-container__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shared-container__buttons span:first-child {
+  border-right: 1px solid var(--light-gray-color);
+}
+.shared-container__establishment-name {
+  color: var(--gray-color);
+  font-weight: 700;
+  font-size: 14px;
+}

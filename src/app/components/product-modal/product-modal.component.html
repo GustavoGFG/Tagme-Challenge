@@ -1,0 +1,116 @@
+<div class="modal" (click)="onModalClick($event)">
+  <div class="modal__content">
+    <div class="modal__title-container">
+      <h2 class="modal__title">{{ "Cadastrar novo produto" | titlecase }}</h2>
+    </div>
+    <form
+      class="modal__form"
+      (ngSubmit)="onSubmit()"
+      #productForm="ngForm"
+      novalidate
+    >
+      <div class="modal__input-container">
+        <label class="modal__label" for="title">Nome:</label>
+        <input
+          class="modal__input"
+          id="title"
+          name="title"
+          [(ngModel)]="product.title"
+          required
+        />
+      </div>
+
+      <div class="modal__input-container">
+        <label class="modal__label" for="description">Descrição:</label>
+        <textarea
+          class="modal__textarea"
+          id="description"
+          name="description"
+          [(ngModel)]="product.description"
+          required
+        ></textarea>
+      </div>
+      <div class="modal__input-row">
+        <div class="modal__input-container">
+          <label class="modal__label" for="price">Preço:</label>
+          <input
+            class="modal__input"
+            id="price"
+            name="price"
+            type="number"
+            [(ngModel)]="product.price"
+            required
+            min="0.01"
+          />
+        </div>
+
+        <div class="modal__input-container">
+          <label class="modal__label" for="imageUrl">Link imagem:</label>
+          <input
+            class="modal__input"
+            id="imageUrl"
+            name="imageUrl"
+            [(ngModel)]="product.imageUrl"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="modal__input-row">
+        <div class="modal__input-container">
+          <label class="modal__label" for="category">Categoria:</label>
+          <select
+            class="modal__select"
+            id="category"
+            name="category"
+            [(ngModel)]="product.category"
+            (change)="onCategoryChange($event)"
+            required
+          >
+            <!-- [(ngModel)]="selectedCategory" -->
+            <option
+              *ngFor="let category of categories"
+              [value]="category.title"
+            >
+              {{ category.title }}
+            </option>
+          </select>
+        </div>
+
+        <div class="modal__input-container">
+          <label for="subcategory">Subcategoria:</label>
+          <select
+            class="modal__select"
+            id="subcategory"
+            name="subcategory"
+            [(ngModel)]="product.subcategory"
+            [disabled]="filteredSubcategories.length === 0"
+            required
+          >
+            <option
+              *ngFor="
+                let subcategory of filteredSubcategories[0]?.subcategories
+              "
+              [value]="subcategory"
+            >
+              {{ subcategory }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal__btn-container">
+        <button type="button" (click)="onCancel()" [disabled]="disableModal">
+          Cancelar
+        </button>
+        <button type="submit" [disabled]="productForm.invalid || disableModal">
+          Confirmar
+        </button>
+      </div>
+    </form>
+  </div>
+  <app-request-notification
+    [message]="message"
+    *ngIf="showNotification"
+  ></app-request-notification>
+</div>

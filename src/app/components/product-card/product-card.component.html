@@ -1,0 +1,26 @@
+<div class="product-card">
+  <div class="product-card__left">
+    <div class="product-card__info">
+      <h3 class="product-card__title">{{ product.title }}</h3>
+      <p class="product-card__description">
+        {{ product.description }}
+      </p>
+    </div>
+    <div class="product-card__footer">
+      <p class="product-card__price">
+        {{ product.price | currency: "BRL" : "symbol" : "1.2-2" : "pt-BR" }}
+      </p>
+      <div class="product-card__actions">
+        <span class="material-icons" (click)="onCardClick()"> edit </span>
+        <span class="material-icons" (click)="onRemoveClick()"> delete </span>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__right">
+    <img
+      class="product-card__image"
+      src="{{ product.imageUrl }}"
+      alt="{{ product.title }}"
+    />
+  </div>
+</div>

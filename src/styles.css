@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --gray-color: rgb(48, 50, 59);
+  --light-gray-color: rgb(234, 234, 234);
+  --lighter-gray-color: rgb(248, 248, 248);
+  --modal-bg: rgba(0, 0, 0, 0.5);
+  --white-color: rgb(255, 255, 255);
+}
+.padding-x {
+  padding-inline: 15px;
+}
+.material-icons {
+  color: var(--gray-color);
+  padding-inline: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+button {
+  background-color: var(--gray-color);
+  border: none;
+  color: var(--white-color);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--white-color);
+  color: var(--gray-color);
+  font-weight: 600;
+}
+button:disabled,
+button:disabled:hover {
+  cursor: default;
+  background-color: var(--light-gray-color);
+  color: var(--white-color);
+}
+@media (max-width: 765px) {
+  .padding-x {
+    padding-inline: 10px;
+  }
+}

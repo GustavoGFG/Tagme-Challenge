@@ -1,0 +1,8 @@
+<div
+  id="notification"
+  class="notification"
+  *ngIf="isVisible"
+  [ngClass]="{ 'notification--fade-in': isAnimated }"
+>
+  {{ message }}
+</div>

@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+}
+.header__icon {
+  font-size: 30px;
+}

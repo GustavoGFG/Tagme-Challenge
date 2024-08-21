@@ -1,0 +1,98 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Onion Bacon",
+      "price": 9.99,
+      "imageUrl": "https://static.saipos.com/saipos-estatico/img-items/19559/store_item/a07a8ce34177ab09840ad37015529344.png?d=x250",
+      "description": "Esse é um dos mais queridos da casa! carne suculenta de 160g, maionese defumada da casa, queijo prato derretido, baconnnnnn, aneis de cebola fritos à perfeição, nosso molho bbq que é sucesso! Tudo isso dentro de um Pão de brioche selado na manteiga!!! delira fi!",
+      "category": "Principais",
+      "subcategory": "Principais"
+    },
+    {
+      "id": "2",
+      "title": "Burguer Kids",
+      "price": 5.99,
+      "imageUrl": "https://static.saipos.com/saipos-estatico/img-items/19559/store_item/98113c838663e4a9911862111e689641.png?d=x250",
+      "description": "Burger 100g, queijo cheddar, ketchup, bacon.",
+      "category": "Principais",
+      "subcategory": "Prato Infantil"
+    },
+    {
+      "id": "ca23",
+      "title": "Coca Cola Zero",
+      "description": "Coca Cola Zero Lata 350ml",
+      "price": 2.5,
+      "imageUrl": "https://us.123rf.com/450wm/lilyoh/lilyoh1904/lilyoh190401397/121521883-kuala-lumpur-malaysia-april-2nd-2015-photo-of-a-can-of-coca-cola-zero-the-brand-is-one-of-the-most.jpg",
+      "category": "Bebidas",
+      "subcategory": "Bebidas"
+    },
+    {
+      "id": "5191",
+      "title": "Coca Cola",
+      "description": "Coca Cola Lata 350ml",
+      "price": 2.5,
+      "imageUrl": "https://s3-sa-east-1.amazonaws.com/superimg/img.produtos/7894900010015/667/img_500_1.png",
+      "category": "Bebidas",
+      "subcategory": "Bebidas"
+    },
+    {
+      "id": "879f",
+      "title": "Nocaute Burguer",
+      "description": "BOOOOM! pão de brioche selado na manteiga, 3 (TRÊS, isso mesmo) carnes 160g, Bacon, muito queijo cheddar (TRIPLO) e maionese defumada da casa! está come fome? é esse!",
+      "price": 15,
+      "imageUrl": "https://static.saipos.com/saipos-estatico/img-items/19559/store_item/5b6c9c487b5d63e660265e21482a6e27.jpeg?d=x250",
+      "category": "Principais",
+      "subcategory": "Principais"
+    },
+    {
+      "id": "baf6",
+      "title": "Milkshake de Nutella",
+      "description": "Leite, sorvete, e nutella batidos, sem mais!",
+      "price": 5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKqvSxRkmlHdtmCMoqeW-6-Njpg94TJqG5g&s",
+      "category": "Sobremesas",
+      "subcategory": "Sobremesas"
+    },
+    {
+      "id": "0df1",
+      "title": "Batata Frita",
+      "description": "Porção de 150g da batata mais crocante do mundo!",
+      "price": 3.5,
+      "imageUrl": "https://conteudo.imguol.com.br/c/entretenimento/a0/2018/02/26/batata-frita-1519671488107_v2_4x3.jpg",
+      "category": "Entradas",
+      "subcategory": "Entradas"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "title": "Entradas",
+      "subcategories": [
+        "Entradas"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Principais",
+      "subcategories": [
+        "Principais",
+        "Prato Infantil"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Sobremesas",
+      "subcategories": [
+        "Sobremesas"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Bebidas",
+      "subcategories": [
+        "Bebidas"
+      ]
+    }
+  ]
+}
