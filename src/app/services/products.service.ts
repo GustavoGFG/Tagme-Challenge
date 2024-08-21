@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../interfaces/Product';
-import { environment } from '../../environments/enviroment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductsService {
-  private apiUrl = `${environment.API_URL}/items`;
+  private apiUrl = 'https://tagme-server.vercel.app/items';
+  // private apiUrl = 'https://localhost:3000/items';
 
   constructor(private http: HttpClient) {}
 
