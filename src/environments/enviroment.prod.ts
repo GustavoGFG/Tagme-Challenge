@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://tagme-server.vercel.app',
+  API_URL: 'https://tagme-server.vercel.app',
 };
